@@ -42,7 +42,7 @@ function init() {
 
 function onSelect() {
   const loader = new THREE.GLTFLoader();
-  loader.load('sample.glb', function (gltf) {
+  loader.load('marbbmini.glb', function (gltf) {
     const model = gltf.scene;
     model.position.setFromMatrixPosition(controller.matrixWorld);
     model.scale.set(0.2, 0.2, 0.2); // 必要ならサイズ調整
